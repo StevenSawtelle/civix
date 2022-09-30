@@ -1,0 +1,48 @@
+
+.bills {
+  .bill {
+    border: 2px solid black;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .bill-info {
+      padding: 10px;
+      border-right: 2px solid black;
+    }
+
+    .vote {
+      padding: 10px;
+      background-color: gray;
+      .options {
+        display: flex;
+        justify-content: space-around;
+        .button{
+          cursor: pointer;
+          justify-content: center;
+          border: 1px solid black;
+          width: 70px;
+          box-shadow: 3px 3px 3px black;
+          font-weight: 750;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          &.green {
+            background-color: #067c06;
+          }
+          &.red {
+            background-color: #b60b0b;
+          }
+        }
+      }
+      .green-text {
+        color: #067c06;
+        font-weight: 750;
+      }
+      .red-text {
+        color: #b60b0b;
+        font-weight: 750;
+      }
+    }
+  }
+}
